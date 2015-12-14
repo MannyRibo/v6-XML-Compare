@@ -159,6 +159,7 @@
   <string name="archive">Archive</string>
   <string name="archived">Archived</string>
   <string name="att_download_failed_content">"Couldn't download the attachment for this message."</string>
+  <string name="att_download_failed_network_slow">Connection speed too slow, try again later</string>
   <string name="att_download_failed_title">"Can't download attachment"</string>
   <string name="att_file_not_exists">"Couldn't find %s"</string>
   <string name="att_mgr_no_attachment">No attachments.</string>
@@ -203,6 +204,13 @@
   <string name="bottom_bar_more_share">Share</string>
   <string name="bottom_bar_no_quickreply_toast">No quick reply</string>
   <string name="bytes">%s B</string>
+  <string name="calendar_remind_dialog_title">Remind</string>
+  <string name="calendar_remind_gridview_month_later">Next month</string>
+  <string name="calendar_remind_gridview_nextweek">Next week</string>
+  <string name="calendar_remind_gridview_pick_date">Pick date</string>
+  <string name="calendar_remind_gridview_tomorrow">Tomorrow</string>
+  <string name="calendar_remind_gridview_tonight">Tonight</string>
+  <string name="calendar_remind_gridview_weekend">Weekend</string>
   <string name="cancel">Cancel</string>
   <string name="cancel_action">Cancel</string>
   <string name="cant_move_or_change_labels">"Can't move because selection contains multiple accounts."</string>
@@ -227,7 +235,7 @@
   <string name="collapse_recipient_details">Collapse recipient details</string>
   <string name="colon">:</string>
   <string name="compose">Compose</string>
-  <string name="compose_attachment_number_limit">The number of attachment can not exceed 10 !</string>
+  <string name="compose_attachment_number_limit">"Can't add more than 10 attachments"</string>
   <string name="compose_picturesexceedlimits">"Can't exceed 5 in-line images in message"</string>
   <string name="compose_send">Send</string>
   <string name="compose_sent">Mail sent</string>
@@ -241,10 +249,11 @@
   <string name="confirm_send_message_with_no_body">"There's no text in the message body."</string>
   <string name="confirm_send_message_with_no_subject">"This message doesn't have a subject."</string>
   <string name="confirm_send_title">Send message?</string>
-  <string name="contact_edit_set_black_list">Set blocklist</string>
-  <string name="contact_edit_set_black_list_from">Delete all mails from this sender</string>
-  <string name="contact_edit_set_black_list_receive">Delete mail with this recipient</string>
+  <string name="contact_edit_set_black_list_filtering">Filtering...</string>
+  <string name="contact_edit_set_black_list_from">Move all mails from this sender to Junk</string>
+  <string name="contact_edit_set_black_list_receive">Move mail with this recipient to Junk(only new mails)</string>
   <string name="contact_edit_set_black_list_receive_summary">Delete mail that includes this recipient in the To or Cc field</string>
+  <string name="contact_edit_set_black_list_title">Set blacklist</string>
   <string name="contact_edit_set_phone_contact">Edit phone contacts</string>
   <string name="contact_edit_title_phone_contact">Phone contacts list</string>
   <string name="contact_in_filter_call_phone_str">Call from %s</string>
@@ -352,6 +361,7 @@
   <string name="exchange_name">Corporate</string>
   <string name="exchange_name_alternate">Microsoft Exchange ActiveSync</string>
   <string name="expand_recipient_details">Expand recipient details</string>
+  <string name="fail_get_email_message">Get message failed.</string>
   <string name="failed">"Couldn't load image"</string>
   <string name="feedback">Send feedback</string>
   <string name="feedback_body">Message</string>
@@ -370,8 +380,11 @@
   <string name="folder_drafts_name_en2">[Gmail]/Drafts</string>
   <string name="folder_junk_name_cn0">垃圾邮件</string>
   <string name="folder_junk_name_cn1">垃圾箱</string>
+  <string name="folder_junk_name_cn2">[Gmail]/垃圾邮件</string>
   <string name="folder_junk_name_en0">Junk</string>
   <string name="folder_junk_name_en1">Bulk Mail</string>
+  <string name="folder_junk_name_en2">Junk Mail</string>
+  <string name="folder_junk_name_en3">Junk E-Mail</string>
   <string name="folder_list_display_all">Display all folders</string>
   <string name="folder_list_display_only_import">Only display important folders</string>
   <string name="folder_picker_title">Choose folders</string>
@@ -395,7 +408,7 @@
   <string name="folder_trash_name_en2">Deleted Message</string>
   <string name="folder_trash_name_en3">[Gmail]/Bin</string>
   <string name="formatted_email_address">&lt;%1$s&gt;</string>
-  <string name="formatted_subject">%1$s%2$s</string>
+  <string name="formatted_subject">%1$s %2$s</string>
   <string name="forward">Forward</string>
   <string name="forward_attachment">Forward</string>
   <string name="forward_attribution">---------- Forwarded message ----------&lt;br&gt;From: %1$s&lt;br&gt;Date: %2$s&lt;br&gt;Subject: %3$s&lt;br&gt;To: %4$s&lt;br&gt;</string>
@@ -417,8 +430,8 @@
   <string name="get_database_exception">"Clear this app's data in Settings &gt; System apps and try again."</string>
   <string name="gmail_acceleration">Use proxy server for Gmail Account</string>
   <string name="gmail_login_confirm_to_use_proxy">Use proxy server to access your Gmail Account?</string>
-  <string name="gmail_login_failed_non_proxy_title">Access Gmail server failed</string>
-  <string name="gmail_server_authorization_deleted">Fetch the access authorization failed,please re-cert.</string>
+  <string name="gmail_login_failed_non_proxy_title">"Couldn't access Gmail server"</string>
+  <string name="gmail_server_authorization_deleted">"Couldn't authenticate account. Try adding this account again."</string>
   <string name="gmail_web_login_go">OK</string>
   <string name="gmail_web_login_required_message">Sign in to Gmail</string>
   <string name="header_category_account">Accounts</string>
@@ -459,10 +472,10 @@
   <string name="mail">Mail</string>
   <string name="mail_body_turncated">This email is too big to load, only display part of it and please go through all on PC later</string>
   <string name="mail_header_network_not_available">"You don't have a network connection."</string>
-  <string name="mailbox_list_account_selector_combined_view">Combined Account</string>
+  <string name="mailbox_list_account_selector_combined_view">Combined account</string>
   <string name="mailbox_name_display_drafts">Drafts</string>
   <string name="mailbox_name_display_inbox">Inbox</string>
-  <string name="mailbox_name_display_junk">Spam</string>
+  <string name="mailbox_name_display_junk">Junk</string>
   <string name="mailbox_name_display_outbox">Outbox</string>
   <string name="mailbox_name_display_sent">Sent</string>
   <string name="mailbox_name_display_starred">Starred</string>
@@ -585,13 +598,13 @@
   <string name="outbox_alert_description_cannot_authenticate">"Couldn't authenticate %s."</string>
   <string name="outbox_alert_description_email_size_error">The maximum size of Email has been reached.</string>
   <string name="outbox_alert_description_fail_authentication">Username or password is incorrect.</string>
-  <string name="outbox_alert_description_fail_network">Network anomaly.</string>
+  <string name="outbox_alert_description_fail_network">"Couldn't connect to the network."</string>
   <string name="outbox_alert_description_http_error">HTTP error while syncing outbox.</string>
   <string name="outbox_alert_description_insufficient_storage_error">Insufficient storage in the mail server</string>
   <string name="outbox_alert_description_provision_error">Server provision error while syncing outbox.</string>
   <string name="outbox_alert_description_reject_by_server">Rejected by %s</string>
   <string name="outbox_alert_description_sent_failed">"Attachment size exceeds the server's limit."</string>
-  <string name="outbox_alert_duplicate_click">Still syncing…</string>
+  <string name="outbox_alert_duplicate_click">Sending now…</string>
   <string name="outbox_alert_edit_resend">Edit and resend</string>
   <string name="outbox_alert_failed_edit_resend">"Couldn't send. Edit and try again."</string>
   <string name="outbox_alert_mailbox_not_found">Email address not found</string>
@@ -729,6 +742,7 @@
   <string name="remove_folder">Remove from %1$s</string>
   <string name="remove_star">Unstar</string>
   <string name="reply">Reply</string>
+  <string name="reply_add_bodycontent">Add quick reply text to the message content?</string>
   <string name="reply_all">Reply all</string>
   <string name="reply_attribution" formatted="false">On %s, %s wrote:</string>
   <string name="reply_subject_label">Re:</string>
@@ -743,8 +757,8 @@
   <string name="save_action">Save</string>
   <string name="save_attachment">Save</string>
   <string name="save_draft_failed">Save draft failed</string>
-  <string name="save_power_summary">Save energy in the setting time</string>
-  <string name="save_power_title">Power saving mode</string>
+  <string name="save_power_summary">Set power saving time</string>
+  <string name="save_power_title">Battery saver</string>
   <string name="saved">Saved,  %s</string>
   <string name="saving">Saving…</string>
   <string name="sdcard_cannot_use">"Can't use SD card"</string>

@@ -19,7 +19,7 @@
   <string name="account_error_shorter_user_name">Name must be longer than 2 characters</string>
   <string name="account_error_user_birthday">The birthday you entered is invalid</string>
   <string name="account_learn_more_title">Create a Mi Account for free</string>
-  <string name="account_limit_update_birthday">sorry, we are unable to process your request at this time.</string>
+  <string name="account_limit_update_birthday">"Can't update birthday right now"</string>
   <string name="account_no_set">None</string>
   <string name="account_none">None</string>
   <string name="account_none_binded_info">None</string>
@@ -183,7 +183,10 @@ To activate your account, follow the
   <string name="passport_license_host_unreachable">"Can't connect to the network. You can view this page at %s."</string>
   <string name="passport_loading">Loading…</string>
   <string name="passport_login">Sign in to an existing account</string>
+  <string name="passport_login_check_find_device">Checking Find device status…</string>
+  <string name="passport_login_check_find_device_failed">"Couldn't check Find device status. Check your network connection."</string>
   <string name="passport_login_failed">"Can't sign in"</string>
+  <string name="passport_login_find_device_bind">This device is associated with existing Mi Account ID (%s). Sign in to activate this device.</string>
   <string name="passport_login_instead_reg">Use this number</string>
   <string name="passport_login_instead_reg_with_email">Use this Email</string>
   <string name="passport_login_notice">Signing in…</string>
@@ -257,9 +260,10 @@ To activate your account, follow the
   <string name="passport_wrong_password">Password is incorrect</string>
   <string name="passport_wrong_phone_number_format">The format of the phone number you entered is invalid</string>
   <string name="passport_wrong_vcode">The code you entered is incorrect</string>
-  <string name="passport_xiaomi_account_dspt">Use your Mi Account to sign in to Mi Cloud, MIUI Theme Store, and other Mi services, from anywhere.</string>
+  <string name="passport_xiaomi_account_dspt">Use your Mi Account to sign in to Mi Cloud, MIUI Theme Store, and Mi Store, from anywhere.</string>
   <string name="passport_xiaomi_account_sec_dspt"/>
-  <string name="passport_xiaomi_account_sec_dspt2">Signing in to your Mi Account requires an internet connection. In addition, location access, Mi Cloud, and Mi VIP will be turned on automatically.</string>
+  <string name="passport_xiaomi_account_sec_dspt2">Internet connection is required to sign in to your Mi Account. Location access and Mi Cloud will be turned on automatically.</string>
+  <string name="passport_xiaomi_account_sec_dspt2_vip">Internet connection is required to sign in to your Mi Account. Location access, Mi Cloud, and Mi VIP will be turned on automatically.</string>
   <string name="phone_activated">%s activated</string>
   <string name="phone_send_verify_code_prompt">Send verification code to %s</string>
   <string name="phone_unactivated">Not activated</string>

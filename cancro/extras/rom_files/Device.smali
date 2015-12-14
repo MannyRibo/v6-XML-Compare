@@ -8,6 +8,10 @@
 
 .field public static final IS_A10:Z
 
+.field private static final IS_A4:Z
+
+.field private static final IS_A7:Z
+
 .field public static final IS_A9:Z
 
 .field public static final IS_CM:Z
@@ -304,6 +308,26 @@
 
     sput-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
 
+    const-string v0, "capricorn"
+
+    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    const-string v0, "scorpio"
+
+    sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
+
     const-string v0, "libra"
 
     sget-object v1, Lmiui/os/Build;->DEVICE:Ljava/lang/String;
@@ -367,7 +391,7 @@
     :cond_7
     move v1, v2
 
-    goto :goto_4
+    goto/16 :goto_4
 .end method
 
 .method public constructor <init>()V
@@ -418,6 +442,32 @@
     return v0
 .end method
 
+.method public static getContinuousShotCallbackClass()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    const-string v0, "camera_continuous_shot_callback_class"
+
+    invoke-static {v0}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getContinuousShotCallbackSetter()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    const-string v0, "camera_continuous_shot_callback_setter"
+
+    invoke-static {v0}, Lmiui/util/FeatureParser;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public static isCaptureStopFaceDetection()Z
     .locals 1
 
@@ -451,6 +501,14 @@
     if-nez v0, :cond_0
 
     sget-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
 
     if-nez v0, :cond_0
 
@@ -559,6 +617,14 @@
 
     if-nez v0, :cond_0
 
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
+
+    if-nez v0, :cond_0
+
     sget-boolean v0, Lcom/android/camera/Device;->IS_A10:Z
 
     if-eqz v0, :cond_1
@@ -588,6 +654,30 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static isHalDoesCafWhenFlashOn()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Y:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Z:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public static isHoldBlurBackground()Z
@@ -790,18 +880,43 @@
 .end method
 
 .method public static isSupportedASD()Z
-    .locals 2
+    .locals 1
 
     .prologue
-    const-string v0, "support_camera_asd"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-static {}, Lcom/android/camera/Device;->isSupportedAsdFlash()Z
 
     move-result v0
 
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/android/camera/Device;->isSupportedAsdHdr()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/android/camera/Device;->isSupportedAsdMotion()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    invoke-static {}, Lcom/android/camera/Device;->isSupportedAsdNight()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
     return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public static isSupportedAoHDR()Z
@@ -817,6 +932,178 @@
     move-result v0
 
     return v0
+.end method
+
+.method public static isSupportedAsdFlash()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI4:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI5:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI11:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A10:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static isSupportedAsdHdr()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI5:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI11:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A10:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static isSupportedAsdMotion()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI11:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Y:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Z:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public static isSupportedAsdNight()Z
+    .locals 1
+
+    .prologue
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI5:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_MI11:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A10:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Y:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_HM3Z:Z
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method
 
 .method public static isSupportedAudioFocus()Z
@@ -884,21 +1171,6 @@
 
     .prologue
     const-string v0, "support_camera_fish_eye"
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static isSupportedFlashIconFlicker()Z
-    .locals 2
-
-    .prologue
-    const-string v0, "support_camera_flash_detection"
 
     const/4 v1, 0x0
 
@@ -1239,6 +1511,14 @@
     if-nez v0, :cond_0
 
     sget-boolean v0, Lcom/android/camera/Device;->IS_A1:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A7:Z
+
+    if-nez v0, :cond_0
+
+    sget-boolean v0, Lcom/android/camera/Device;->IS_A4:Z
 
     if-nez v0, :cond_0
 

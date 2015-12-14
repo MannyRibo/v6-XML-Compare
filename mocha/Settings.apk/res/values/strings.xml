@@ -91,10 +91,9 @@ Note: Triple-tap for magnification works everywhere except the keyboard and navi
 Make sure your finger covers the inner edge of the sensor"</string>
   <string name="add_fingerprint_instruction_msg">Unlock your device or verify payment with your fingerprint</string>
   <string name="add_fingerprint_instruction_title">Place your finger on the fingerprint scanner</string>
-  <string name="add_fingerprint_move_finger_title">Remove finger</string>
   <string name="add_fingerprint_put_finger_edge_msg">After pressing the sensor, remove the finger, and repeat again.</string>
   <string name="add_fingerprint_put_finger_msg">After pressing the sensor, remove the finger, and repeat again.</string>
-  <string name="add_fingerprint_put_finger_title">Place finger</string>
+  <string name="add_fingerprint_put_finger_title">Place finger and remove finger</string>
   <string name="add_fingerprint_text">Add fingerprint</string>
   <string name="add_fingerprint_toast_text">Place your finger on the scanner now</string>
   <string name="additional_system_update"/>
@@ -205,7 +204,7 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="applications_settings_summary">Manage apps, set up quick launch shortcuts</string>
   <string name="apply_fingerprint_to_category_title">Apply fingerprint to…</string>
   <string name="apply_now_button_text">Update</string>
-  <string name="apply_password_to_category_title">Apply password to…</string>
+  <string name="apply_password_to_category_title">Require password</string>
   <string name="apply_update_fail">Update failed</string>
   <string name="apps_and_data_item_desc">Apps and data</string>
   <string name="apps_with_restrictions_header">Applications with restrictions</string>
@@ -254,12 +253,6 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="background_data_dialog_message">Disabling background data extends battery life and lowers data use. Some apps may still use the background data connection.</string>
   <string name="background_data_dialog_title">Disable background data?</string>
   <string name="background_data_summary">Apps can sync, send, and receive data at any time</string>
-  <string name="background_location_control_summary">"Allow or prevent apps from getting your device's location info in the background"</string>
-  <string name="background_location_control_title">Background location access</string>
-  <string name="background_location_deselect_apps">Unselect all</string>
-  <string name="background_location_requests_summary">"Allow apps to use location service when you're not using them"</string>
-  <string name="background_location_requests_title">Allow background location</string>
-  <string name="background_location_select_apps">Select all</string>
   <string name="background_process_stop_description">"This is an old app process that is still running in case it's needed again. There is usually no reason to stop it."</string>
   <string name="backup">Backup</string>
   <string name="backup_configure_account_default_summary">No account is currently storing backed up data</string>
@@ -270,6 +263,7 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="backup_delete">Delete:</string>
   <string name="backup_empty">No backups.</string>
   <string name="backup_empty_info">" Back up your data, settings, and apps"</string>
+  <string name="backup_empty_info_onpad">" Back up your data, settings, and apps"</string>
   <string name="backup_erase_dialog_message">Stop backing up your WLAN passwords, bookmarks, other settings, and app data, and erase all copies on Google servers?</string>
   <string name="backup_erase_dialog_title"/>
   <string name="backup_error">"Couldn't back up"</string>
@@ -277,6 +271,7 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="backup_file_error">"Couldn't back up"</string>
   <string name="backup_finished">Backed up successfully</string>
   <string name="backup_hint">Keep your device powered on</string>
+  <string name="backup_hint_onpad">Keep your device powered on</string>
   <string name="backup_is_running">Backing up device</string>
   <string name="backup_items_app_tailer">" app data files"</string>
   <string name="backup_items_sysdata_tailer">" system data files,"</string>
@@ -626,8 +621,10 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display</string>
   <string name="change_password">Change password</string>
   <string name="change_security_lock">Try other ways to unlock</string>
+  <string name="check_find_device_status_failure_confirm">OK</string>
   <string name="check_update">Check for updates</string>
   <string name="checkbox_notification_same_as_incoming_call">Use incoming call volume for notifications</string>
+  <string name="checking_find_device_status">Checking Find device status…</string>
   <string name="checking_for_updates">Checking for updates…</string>
   <string name="children_mode_enable_title">Child mode</string>
   <string name="children_mode_set_apps_title">Accessible apps</string>
@@ -647,15 +644,20 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="clear_failed_dlg_text">"Couldn't clear data for app."</string>
   <string name="clear_failed_dlg_title">Clear data</string>
   <string name="clear_user_data_text">Clear data</string>
+  <string name="click_to_view">Tap to view</string>
   <string name="cloud_app_name">Mi Cloud backup</string>
   <string name="cloud_backup_hint">To access your backups, sign in now</string>
   <string name="cloud_backup_login">Sign in to your Mi Account</string>
+  <string name="cloud_backup_section_title">Mi Cloud backup</string>
+  <string name="cloud_backup_settings_section_title">Backup settings</string>
   <string name="cloud_backup_window_title">Mi Cloud backup</string>
   <string name="cloud_home_title">Mi Cloud</string>
   <string name="cloud_item_info_summary">" (Local: %1$s | Mi Cloud: %2$s)"</string>
   <string name="cloud_last_backup">"Last backed up on "</string>
   <string name="cloud_no_backup">No backups</string>
   <string name="cloud_restore_guide">To restore user data for %s, touch Restore</string>
+  <string name="cloud_restore_section_summary">Restore apps, Home screen layout, and system settings</string>
+  <string name="cloud_restore_section_title">Restore from Mi Cloud</string>
   <string name="cloud_restore_title">Restore backup data</string>
   <string name="cloud_restore_window_title">Mi Cloud restore</string>
   <string name="cloud_search">Searching…</string>
@@ -687,6 +689,7 @@ Make sure your finger covers the inner edge of the sensor"</string>
   <string name="confirm_action">OK</string>
   <string name="confirm_download_cancelation_dialog_message">Cancel download?</string>
   <string name="confirm_erase">Erase</string>
+  <string name="confirm_fingerprint_msg">Place your finger on the fingerprint scanner</string>
   <string name="confirm_new_backup_pw_prompt">Retype your new full backup password here</string>
   <string name="connect_to_internet">Connect to network</string>
   <string name="connected_wifi">Connected</string>
@@ -747,6 +750,7 @@ Encryption takes an hour or more. You must start with a charged battery and keep
   <string name="current_account">Hi %s</string>
   <string name="current_backup_pw_prompt">Type your current full backup password here</string>
   <string name="current_input_method">Default</string>
+  <string name="current_pad_location">Pad</string>
   <string name="current_phone_location">Phone</string>
   <string name="current_sim">Current SIM card</string>
   <string name="current_use_ese">Using embedded secure element</string>
@@ -1096,12 +1100,17 @@ Some apps may not work until updated by their developers."</string>
   <string name="external_data_size_label">SD card</string>
   <string name="factory_reset_summary">"Erase all data from your pad's internal storage"</string>
   <string name="fail">Failed</string>
+  <string name="failed_to_check_find_device_status_content">"Couldn't check Find device status. Wait a minute or two and try again."</string>
+  <string name="failed_to_check_find_device_status_title">"Couldn't check Find device status"</string>
   <string name="failed_to_open_app_settings_toast">Failed to open settings for %1$s</string>
+  <string name="failed_to_shut_down_find_device_content">"Couldn't turn off Find device. Wait a minute or two and try again."</string>
+  <string name="failed_to_shut_down_find_device_title">"Couldn't turn off Find device"</string>
   <string name="fcc_equipment_id">Equipment ID</string>
   <string name="feature_title_account">Account</string>
   <string name="feature_title_call_log">Call history</string>
   <string name="feature_title_mms">MMS</string>
   <string name="file_uploading">Uploading…</string>
+  <string name="files_backup_info">All files on SD card (including photos, songs, videos, app data, etc.)</string>
   <string name="filter">Filter</string>
   <string name="filter_apps_all">All</string>
   <string name="filter_apps_cached">Cached</string>
@@ -1122,7 +1131,7 @@ Some apps may not work until updated by their developers."</string>
   <string name="firmware_version">Android version</string>
   <string name="floating_window_switch_label">Turn on floating windows</string>
   <string name="floating_window_switch_label_disable">Turn off floating windows</string>
-  <string name="fluency_mode">Optimize system performance</string>
+  <string name="fluency_mode">System animations</string>
   <string name="fluency_mode_confirm_and_reboot">Reboot now</string>
   <string name="font_size_exhuge">Extra Huge</string>
   <string name="font_size_huge">Huge</string>
@@ -1147,6 +1156,7 @@ Some apps may not work until updated by their developers."</string>
   <string name="force_stop">Force stop</string>
   <string name="force_stop_dlg_text">If you force stop an app, it may misbehave.</string>
   <string name="force_stop_dlg_title">Force stop?</string>
+  <string name="forget_password_button_text">&lt;u&gt;Forgot password&lt;/u&gt;</string>
   <string name="forget_wifi_message">Your pad will stop connecting to this network automatically.</string>
   <string name="found_new_version">Update available</string>
   <string name="free_wifi_agreement_remind_never">"Don't show again"</string>
@@ -1170,6 +1180,7 @@ Some apps may not work until updated by their developers."</string>
   <string name="free_wifi_user_agreement_allow">Allow</string>
   <string name="free_wifi_user_agreement_title">Privacy warning</string>
   <string name="free_wifi_wiwide_provider">WiWide</string>
+  <string name="free_xiaomi_wifi_connect_summary">Tap to connect to %1$s.</string>
   <string name="frequently_fragment_delete">Remove</string>
   <string name="frequently_fragment_tempty">Frequently used items will be listed here</string>
   <string name="gadget_bluetooth">Bluetooth</string>
@@ -1249,8 +1260,8 @@ Some apps may not work until updated by their developers."</string>
   <string name="help_url_vpn"/>
   <string name="help_url_wifi"/>
   <string name="hidden_ssid_label">Hidden SSID:</string>
-  <string name="high_performance_notif_summary">"Performance mode disables temperature controls and battery consumption limits allowing your device to run at maximum capacity. This may cause your device to heat up and reduce it's battery life."</string>
-  <string name="high_performance_notif_title">Battery usage warning</string>
+  <string name="high_performance_notif_summary">Device may heat up during heavy use.</string>
+  <string name="high_performance_notif_title">Performance mode is on</string>
   <string name="high_performance_title">"Looks like you're running a benchmark test. Set power management to \"Performance\" for best results."</string>
   <string name="history_details_title">History details</string>
   <string name="home_app_uninstall_button">Uninstall this application</string>
@@ -1288,8 +1299,8 @@ Some apps may not work until updated by their developers."</string>
   <string name="input_settings">Input settings</string>
   <string name="install_all_warning">Your pad and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your pad or loss of data that may result from using these apps.</string>
   <string name="install_applications">Unknown sources</string>
-  <string name="install_no_market_app_summary">Allow installation of apps from sources other than the App Store</string>
-  <string name="install_no_market_app_title">Unknown sources</string>
+  <string name="install_no_market_app_summary">Scan third-party apps for viruses before installing</string>
+  <string name="install_no_market_app_title">Scan third-party apps</string>
   <string name="install_preinstall_app">Loading apps…</string>
   <string name="install_text">Install</string>
   <string name="install_unknown_applications">Allow installation of apps from unknown sources</string>
@@ -1381,6 +1392,7 @@ Some apps may not work until updated by their developers."</string>
   <string name="local_no_backup">No backups.</string>
   <string name="local_restore_window_title">Local restore</string>
   <string name="local_select_account_contact">Accounts &amp; contacts</string>
+  <string name="local_select_files">SD card</string>
   <string name="local_select_sysdata">System</string>
   <string name="local_select_userapp">Apps</string>
   <string name="locale_default">Default</string>
@@ -1451,6 +1463,7 @@ Some apps may not work until updated by their developers."</string>
   <string name="lock_settings_picker_settings">Set screen lock</string>
   <string name="lock_settings_picker_title">Choose screen lock</string>
   <string name="lock_settings_title">Screen security</string>
+  <string name="lock_settings_with_fingerprint">Lock screen &amp; password</string>
   <string name="lock_setup">Setup is complete.</string>
   <string name="lock_sounds_enable_title">Screen lock sound</string>
   <string name="lockpassword_cancel_label">Cancel</string>
@@ -1861,6 +1874,7 @@ Select your operating system:"</string>
   <string name="oldman_mode_settings_caption">Lite mode settings</string>
   <string name="oldman_mode_summary">Use simplified Home screen and menus</string>
   <string name="oldman_mode_summary_cta">Lite mode needs to connect to the internet and read your contacts, messages, and location info to work normally.</string>
+  <string name="onekey_migrate">Transfer</string>
   <string name="online_resource_entry">Online resources</string>
   <string name="only_one_home_message">Home settings will be hidden until you install another home application.</string>
   <string name="only_when_charging">Only when plugged in</string>
@@ -1963,7 +1977,7 @@ Select your operating system:"</string>
   <string name="power_bluetooth">Bluetooth</string>
   <string name="power_cell">Cell standby</string>
   <string name="power_center">Power</string>
-  <string name="power_hide_mode_summary">"Save battery by restricting individual apps' background processes, WLAN and mobile data connections, and GPS"</string>
+  <string name="power_hide_mode_summary">"Save battery by restricting individual apps' background processes, WLAN and mobile data connections, and GPS usage"</string>
   <string name="power_hide_mode_title">Manage apps battery usage</string>
   <string name="power_idle">Pad idle</string>
   <string name="power_mgr">Battery</string>
@@ -2171,6 +2185,7 @@ Select your operating system:"</string>
   <string name="refresh">Refresh</string>
   <string name="regulatory_info_text"/>
   <string name="regulatory_information">Regulatory information</string>
+  <string name="remote_receive">Receive</string>
   <string name="remove_account_failed">This account is required by some apps. You can only remove it by resetting the pad to factory defaults (which deletes all your personal data) in Settings &gt; Backup &amp; reset.</string>
   <string name="remove_account_label">Remove account</string>
   <string name="remove_device_admin">Deactivate</string>
@@ -2189,6 +2204,7 @@ Select your operating system:"</string>
  You will not lose any app data."</string>
   <string name="reset_app_preferences_title">Reset app preferences?</string>
   <string name="reset_legacy_password_settings_preface_text">You need to reset your lock screen password.</string>
+  <string name="resolver_settings_label">Sort</string>
   <string name="resource_ringtone_volume_mute">Your ringer is currently silenced</string>
   <string name="restore">Restore</string>
   <string name="restore_backup">Restore</string>
@@ -2381,6 +2397,7 @@ This setting affects all users on this tablet."</string>
   <string name="search_sync">sync</string>
   <string name="search_tether">tether</string>
   <string name="search_unlock_set">unlock set</string>
+  <string name="search_virtual_sim">virtual sim</string>
   <string name="search_vpn">vpn</string>
   <string name="search_wallpaper">wallpaper</string>
   <string name="search_wifi">wifi</string>
@@ -2391,6 +2408,7 @@ This setting affects all users on this tablet."</string>
   <string name="security_keyguard_category_name">Lock screen</string>
   <string name="security_password_category_name">Screen lock</string>
   <string name="security_passwords_title">Passwords</string>
+  <string name="security_patch">Android security patch level</string>
   <string name="security_privacy_settings_title">Privacy</string>
   <string name="security_relative">Security</string>
   <string name="security_settings_billing_desc">This app may charge you money:</string>
@@ -2467,6 +2485,10 @@ This setting affects all users on this tablet."</string>
   <string name="show_touches">Show touches</string>
   <string name="show_touches_summary">Show visual feedback for touches</string>
   <string name="show_user_info_on_lockscreen_label">Show user info on lock screen</string>
+  <string name="shut_down_find_device_failure_confirm">OK</string>
+  <string name="shut_down_find_device_network_failure_content">"Couldn't turn off Find device. Make sure your device is connected to the internet."</string>
+  <string name="shut_down_find_device_network_failure_title">"Can't connect to the network"</string>
+  <string name="shuting_down_find_device">Turning off Find device…</string>
   <string name="silent_mode_title">Silent mode</string>
   <string name="sim_bad_pin">Type a PIN that is 4 to 8 numbers</string>
   <string name="sim_change_failed">"Can't change PIN.
@@ -2517,7 +2539,7 @@ Possibly incorrect PIN."</string>
   <string name="software_backup_info">App data</string>
   <string name="sort_order_alpha">Sort by name</string>
   <string name="sort_order_size">Sort by size</string>
-  <string name="sound_category_call_ringtone_vibrate_title">Call ringtone &amp; vibrate</string>
+  <string name="sound_category_call_ringtone_vibrate_title">Ringtone &amp; vibrate</string>
   <string name="sound_category_notification_title">Notifications</string>
   <string name="sound_category_sound_title">General</string>
   <string name="sound_category_system_title">System</string>
@@ -2552,9 +2574,11 @@ A trusted credential installed on your device is making this possible."</string>
   <string name="state_waiting">Just a sec…</string>
   <string name="status_awake_time">Awake time</string>
   <string name="status_bar_and_notification_bar">Notification shade and status bar</string>
-  <string name="status_bar_app_disable_notification">Hide notifications</string>
-  <string name="status_bar_app_enable_on_keyguard_and_notificationBar">Lock screen, notification shade</string>
-  <string name="status_bar_app_enable_on_notificationBar">Notification shade</string>
+  <string name="status_bar_app_des_separator">", "</string>
+  <string name="status_bar_app_disable_notification">Notifications hidden</string>
+  <string name="status_bar_app_enable_floating">Floating notifications</string>
+  <string name="status_bar_app_enable_keyguard">Lock screen</string>
+  <string name="status_bar_app_enable_message">Badges</string>
   <string name="status_bar_key_position_custom">Custom key position</string>
   <string name="status_bar_screen_button_key">Screen virtual keys</string>
   <string name="status_bar_screen_key_back">Back button</string>
@@ -2580,10 +2604,11 @@ A trusted credential installed on your device is making this possible."</string>
   <string name="status_bar_settings_notification_sound_vibrate">Sound &amp; vibration</string>
   <string name="status_bar_settings_show_carrier">Show carrier name</string>
   <string name="status_bar_settings_show_carrier_summary">Carrier name is still displayed on the lock screen and in the notification shade when this feature is off</string>
+  <string name="status_bar_settings_show_floating_notification">Floating notifications</string>
+  <string name="status_bar_settings_show_floating_notification_summary">"Floating notifications will disappear automatically after they're shown at the top of the screen"</string>
   <string name="status_bar_settings_show_flow_info">Show flow details</string>
   <string name="status_bar_settings_show_home_message">App icon badge</string>
-  <string name="status_bar_settings_show_keyguard_notification">Floating and lock screen</string>
-  <string name="status_bar_settings_show_keyguard_notification_summary">"Floating notifications will disappear automatically after they're shown at the top of the screen"</string>
+  <string name="status_bar_settings_show_keyguard_notification">Lock screen notifications</string>
   <string name="status_bar_settings_show_network_speed">Show connection speed</string>
   <string name="status_bar_settings_show_notification_icon">Show notification icons</string>
   <string name="status_bar_settings_show_screenshot_notification">Show screenshot notification</string>
@@ -2745,6 +2770,58 @@ A Google approach to syncing data to allow access to your contacts, appointments
   <string name="track_frame_time">Profile GPU rendering</string>
   <string name="trackball_settings">Trackball</string>
   <string name="trackball_wake_title">Trackball wake</string>
+  <string name="trans_backingup">Backing up …</string>
+  <string name="trans_backingup_no_items">Syncing…</string>
+  <string name="trans_cancel_confirm">Transfer in progress, cancel now?</string>
+  <string name="trans_cancelling">Canceling</string>
+  <string name="trans_connect_failed_toast">"Couldn't connect"</string>
+  <string name="trans_connecting_toast">Connecting…</string>
+  <string name="trans_detail_category_account">Accounts and contacts</string>
+  <string name="trans_detail_category_files">Files</string>
+  <string name="trans_detail_category_sysdata">System data</string>
+  <string name="trans_detail_category_userdata">Apps</string>
+  <string name="trans_device_disconnected">Device disconnected</string>
+  <string name="trans_generate_qr_code_failed">"Couldn't create QR code"</string>
+  <string name="trans_main_tutor">Transfer contacts, call history, messages, home screen layout, apps, settings, etc. to a new device</string>
+  <string name="trans_my_device">My device</string>
+  <string name="trans_one_key_migrate">Transfer</string>
+  <string name="trans_operate_new_phone_tips">"Scan QR code using new device
+Go to Settings &gt; Additional Settings &gt; Transfer
+Tap [I'm a recipient] to create a QR code"</string>
+  <string name="trans_operate_old_phone_tips1">"Method A
+1. Install the Transfer app on your old device
+2. Open the app and select [I'm a sender]
+3. Scan the QR code with your old device"</string>
+  <string name="trans_operate_old_phone_tips2">"Method B
+Go to Settings &gt; Additional Settings &gt; Transfer
+Tap [I'm a sender]"</string>
+  <string name="trans_progress_subdescript_br_receiver">Receiving %s</string>
+  <string name="trans_progress_subdescript_br_sender">Backing up %s</string>
+  <string name="trans_progress_subdescript_transing_receiver">Receiving %s</string>
+  <string name="trans_progress_subdescript_transing_sender">Sending %s</string>
+  <string name="trans_progress_subdescript_transingsd_receiver">Receiving files…</string>
+  <string name="trans_progress_subdescript_transingsd_sender">Sending files…</string>
+  <string name="trans_progress_subdescript_waiting">Waiting to receive %s</string>
+  <string name="trans_receiver">"I'm a recipient"</string>
+  <string name="trans_receiving_completed">Data received</string>
+  <string name="trans_restoring">Restoring…</string>
+  <string name="trans_restoring_no_items">Syncing items</string>
+  <string name="trans_scan_invalid_qrcode">QR code invalid</string>
+  <string name="trans_scan_qr_code_tips">Scan QR code using new device</string>
+  <string name="trans_select_device_receive">Select one device to receive data.</string>
+  <string name="trans_select_device_send">Select one device to transfer data.</string>
+  <string name="trans_sender">"I'm a sender"</string>
+  <string name="trans_sender_connectting">Confirm on new device</string>
+  <string name="trans_sender_searching">Searching for new devices</string>
+  <string name="trans_sender_searching_ensurance">"Make sure the old device is on
+Waiting for the old device to connect…"</string>
+  <string name="trans_sending_completed">Data sent</string>
+  <string name="trans_show_qr_code_tips">Scan QR code using old device</string>
+  <string name="trans_time_format_second">less than one minute</string>
+  <string name="trans_time_remained">, ready in</string>
+  <string name="trans_waiting_ensurance">"Make sure the old device is on
+and Transfer is enabled"</string>
+  <string name="trans_waiting_for_sender">Waiting for the old device to connect…</string>
   <string name="transition_animation_scale_title">Transition animation scale</string>
   <string name="translation_contributors_summary"/>
   <string name="translation_contributors_title">Contributors</string>
@@ -2799,7 +2876,7 @@ A Google approach to syncing data to allow access to your contacts, appointments
   <string name="tts_status_ok">%1$s is fully supported</string>
   <string name="tts_status_requires_network">%1$s requires network connection</string>
   <string name="tts_status_title">Default language status</string>
-  <string name="turn_off_common_password_confirm_msg">The password will be turned of as well.</string>
+  <string name="turn_off_common_password_confirm_msg">The password will be turned off as well.</string>
   <string name="turn_off_radio">Turn off radio</string>
   <string name="turn_off_security_lock">Turn off lock</string>
   <string name="turn_on_radio">Turn on radio</string>
@@ -2979,6 +3056,7 @@ Add a word by touching the Add (+) button"</string>
   <string name="vibrate_when_ringing_title">Vibrate when ringing</string>
   <string name="virtual_sim_category_title">Virtual Sim</string>
   <string name="virtual_sim_description">Reliable international roaming service</string>
+  <string name="virtual_sim_search_title">Virtual SIM</string>
   <string name="virtual_sim_title">Roaming data network</string>
   <string name="virus_scan">Virus scan</string>
   <string name="virus_scan_app_continue">Continue scan</string>
@@ -2999,7 +3077,7 @@ Add a word by touching the Add (+) button"</string>
   <string name="virus_scanner_auto_update">Update automatically</string>
   <string name="virus_scanner_date_formater">MMM dd yyyy</string>
   <string name="virus_scanner_lib_already_latest">"You're already using the latest definitions"</string>
-  <string name="virus_scanner_lib_update_failed">Update failed</string>
+  <string name="virus_scanner_lib_update_failed">"Couldn't update"</string>
   <string name="virus_scanner_lib_updating">Updating definitions…</string>
   <string name="virus_scanner_manual_update">Updated %s</string>
   <string name="virus_scanner_provider">Definitions provided by %s</string>
@@ -3399,7 +3477,7 @@ Tablet setup can require significant network activity."</string>
   <string name="wifi_wapi_cert_mgmt_as_dont_exist">SD card does not have an AS certificate.</string>
   <string name="wifi_wapi_cert_mgmt_as_format_is_wrong">AS certificate format is incorrect.</string>
   <string name="wifi_wapi_cert_mgmt_as_name_is_empty">Enter AS certificate name</string>
-  <string name="wifi_wapi_cert_mgmt_subdir_create_fail">Failed to create directory.</string>
+  <string name="wifi_wapi_cert_mgmt_subdir_create_fail">"Couldn't create a folder."</string>
   <string name="wifi_wapi_cert_mgmt_subdir_exist">A directory with that name already exists.</string>
   <string name="wifi_wapi_cert_mgmt_subdir_name_is_empty">Enter directory name</string>
   <string name="wifi_wapi_cert_mgmt_titlebar">WAPI Certificate Management</string>
