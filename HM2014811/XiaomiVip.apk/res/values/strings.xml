@@ -32,6 +32,7 @@
   <string name="device_charge_times">Times charged</string>
   <string name="device_unlock_screen_times">Screen unlocked</string>
   <string name="device_usage_data">Phone usage stats</string>
+  <string name="download_fail">"Can't download app: %s"</string>
   <string name="download_message">Download %s?</string>
   <string name="download_progress">%d%%</string>
   <string name="download_title">Download this app?</string>
@@ -103,7 +104,7 @@
   <string name="task_begin">In progress…</string>
   <string name="task_completed">Completed</string>
   <string name="task_done">Completed</string>
-  <string name="task_limit">No challenges left today. See you tomorrow!</string>
+  <string name="task_limit">No challenges left today.</string>
   <string name="task_not_completed">Not completed</string>
   <string name="task_ongoing">In progress</string>
   <string name="task_score">%d points</string>
